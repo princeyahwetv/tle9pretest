@@ -21,32 +21,26 @@
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
  </head>
  <body class="h-full">
-  <div id="app" class="h-full w-full bg-slate-900 overflow-auto">
-   <!-- Entry Form Screen -->
+  <div id="app" class="h-full w-full bg-slate-900 overflow-auto"><!-- Entry Form Screen -->
    <div id="entry-screen" class="flex items-center justify-center min-h-full p-6">
     <div class="text-center max-w-lg">
-     <div class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-      <i data-lucide="monitor" class="w-10 h-10 text-white"></i>
+     <div class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="monitor" class="w-10 h-10 text-white"></i>
      </div>
      <h1 id="main-title" class="text-3xl font-bold text-white mb-3">TLE – ICT: Computer Systems Servicing</h1>
      <p class="text-slate-400 mb-6">50-Item Multiple Choice Pre-Test Quiz</p>
      <form onsubmit="proceedToQuiz(event)" class="space-y-4">
-      <div class="text-left">
-       <label class="block text-slate-300 text-sm font-medium mb-2">Full Name</label> <input id="student-name" type="text" placeholder="Enter your full name" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" required>
+      <div class="text-left"><label class="block text-slate-300 text-sm font-medium mb-2">Full Name</label> <input id="student-name" type="text" placeholder="Enter your full name" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" required>
       </div>
-      <div class="text-left">
-       <label class="block text-slate-300 text-sm font-medium mb-2">Grade Level</label> <select id="student-grade" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white focus:border-emerald-500 focus:outline-none" required> <option value="">Select Grade</option> <option value="7">Grade 7</option> <option value="8">Grade 8</option> <option value="9">Grade 9</option> <option value="10">Grade 10</option> </select>
+      <div class="text-left"><label class="block text-slate-300 text-sm font-medium mb-2">Grade Level</label> <select id="student-grade" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white focus:border-emerald-500 focus:outline-none" required> <option value="">Select Grade</option> <option value="7">Grade 7</option> <option value="8">Grade 8</option> <option value="9">Grade 9</option> <option value="10">Grade 10</option> </select>
       </div>
-      <div class="text-left">
-       <label class="block text-slate-300 text-sm font-medium mb-2">Section</label> <input id="student-section" type="text" placeholder="e.g., A, B, or CSS-1" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" required>
+      <div class="text-left"><label class="block text-slate-300 text-sm font-medium mb-2">Section</label> <input id="student-section" type="text" placeholder="e.g., A, B, or CSS-1" class="w-full px-4 py-2 rounded-xl bg-slate-800 border-2 border-slate-700 text-white placeholder-slate-500 focus:border-emerald-500 focus:outline-none" required>
       </div><button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-xl transition">Proceed to Quiz</button>
      </form>
     </div>
    </div><!-- Start Screen -->
    <div id="start-screen" class="hidden flex items-center justify-center min-h-full p-6">
     <div class="text-center max-w-lg">
-     <div class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-      <i data-lucide="monitor" class="w-10 h-10 text-white"></i>
+     <div class="w-20 h-20 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6"><i data-lucide="monitor" class="w-10 h-10 text-white"></i>
      </div>
      <h1 id="main-title" class="text-3xl font-bold text-white mb-3">TLE – ICT: Computer Systems Servicing</h1>
      <p class="text-slate-400 mb-2">50-Item Multiple Choice Pre-Test Quiz</p>
@@ -61,8 +55,7 @@
    </div><!-- Quiz Screen -->
    <div id="quiz-screen" class="hidden min-h-full p-4 md:p-6">
     <div class="max-w-2xl mx-auto">
-     <div class="flex items-center justify-between mb-4">
-      <span id="q-counter" class="text-emerald-400 font-medium text-sm">Question 1 of 50</span> <span id="timer-display" class="text-slate-400 text-sm">Time: 60:00</span>
+     <div class="flex items-center justify-between mb-4"><span id="q-counter" class="text-emerald-400 font-medium text-sm">Question 1 of 50</span> <span id="timer-display" class="text-slate-400 text-sm">Time: 60:00</span>
      </div>
      <div class="w-full bg-slate-700 rounded-full h-2 mb-6">
       <div id="progress-bar" class="progress-fill bg-emerald-500 h-2 rounded-full" style="width:2%"></div>
@@ -93,8 +86,7 @@
     <div class="max-w-2xl w-full">
      <div class="bg-gradient-to-b from-amber-50 to-yellow-50 rounded-2xl p-12 shadow-2xl border-4 border-amber-400">
       <div class="text-center mb-8">
-       <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
-        <i data-lucide="award" class="w-8 h-8 text-white"></i>
+       <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="award" class="w-8 h-8 text-white"></i>
        </div>
        <h1 class="text-4xl font-bold text-amber-900 mb-2">Certificate of Completion</h1>
        <p class="text-amber-700 text-sm">TLE – ICT: Computer Systems Servicing Pre-Test</p>
@@ -125,11 +117,13 @@
         <p class="text-amber-900 font-semibold text-sm">Joel P. Rodriguez</p>
         <p class="text-amber-700 text-xs">TLE Teacher</p>
        </div>
-       <div class="text-right"><i data-lucide="stamp" class="w-12 h-12 text-amber-400 inline-block"></i>
+       <div class="text-right">
+        <i data-lucide="stamp" class="w-12 h-12 text-amber-400 inline-block"></i>
        </div>
       </div>
      </div>
-     <div class="text-center mt-8 space-y-3"><button onclick="downloadCertificate()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-xl transition mr-3"><i data-lucide="download" class="w-4 h-4 inline mr-2"></i>Download Certificate</button> <button onclick="retakeQuiz()" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-8 py-3 rounded-xl transition"><i data-lucide="repeat" class="w-4 h-4 inline mr-2"></i>Retake Quiz</button>
+     <div class="text-center mt-8 space-y-3">
+      <button onclick="downloadCertificate()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-3 rounded-xl transition mr-3"><i data-lucide="download" class="w-4 h-4 inline mr-2"></i>Download Certificate</button> <button onclick="retakeQuiz()" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-8 py-3 rounded-xl transition"><i data-lucide="repeat" class="w-4 h-4 inline mr-2"></i>Retake Quiz</button>
      </div>
     </div>
    </div>
@@ -270,6 +264,11 @@ function selectAnswer(i) {
   if (i === q.ans) {
     score++;
   }
+  
+  // Add gray highlight to selected answer
+  const buttons = document.querySelectorAll('.option-btn');
+  buttons[i].style.background = '#6b7280';
+  buttons[i].style.borderColor = '#4b5563';
   
   document.getElementById('next-btn').classList.remove('hidden');
   document.getElementById('next-btn').textContent = current < 49 ? 'Next Question' : 'See Results';
@@ -497,5 +496,5 @@ window.elementSdk.init({
 
 lucide.createIcons();
 </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0bddb1472f18d0f',t:'MTc4MTQ4NzUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0bde9c520c98d0f',t:'MTc4MTQ4ODExMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
